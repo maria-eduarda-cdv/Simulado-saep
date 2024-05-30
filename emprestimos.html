@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="modal1e.showModal()">Registro de empréstimos</button>
+    <dialog id="modal1e">
+        <input type="text" placeholder="código do empréstimo">
+        <input type="text" placeholder="código do livro">
+        <input type="text" placeholder="matrícula do estudante">
+        <input type="text" placeholder="data da retirada">
+        <input type="text" placeholder=" data prevista de entrega">
+        <button>Registrar</button>
+        <button onclick="modal1e.close()">Fechar</button>
+    </dialog>
+    
+    <button onclick="modal2e.showModal()">Consulta de empréstimos</button>
+    <dialog id="modal2e">
+        <input type="text" placeholder="Procure o emprestimo aqui">
+        <p>Emprestimos aqui</p>
+        <button onclick="modal2e.close()">Fechar</button>
+    </dialog>
+
+
+    <button onclick="modal3e.showModal()">Edição de empréstimos</button>
+    <dialog id="modal3e">
+        <p>emprestimos aqui</p>
+        <button onclick="modal3e.close()">Fechar</button>
+    </dialog>
+
+
+    <button onclick="modal4e.showModal()">Exclusão de empréstimos</button>
+    <dialog id="modal4e">
+        <p>Os emprestimos aparecerão aqui</p>
+        <button onclick="modal4e.close()">Fechar</button>
+    </dialog>
+
+</body>
+</html>

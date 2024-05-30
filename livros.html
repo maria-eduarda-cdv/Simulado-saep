@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="modal1l.showModal()">Registro de livros</button>
+    <dialog id="modal1l">
+        <input type="text" placeholder="Nome do livro">
+        <input type="text" placeholder="código do livro">
+       <button>Registrar</button>
+        <button onclick="modal1l.close()">Fechar</button>
+    </dialog>
+    
+    <button onclick="modal2l.showModal()">Consulta de livros</button>
+    <dialog id="modal2l">
+        <input type="text" placeholder="Procure o emprestimo aqui">
+        <p>Livros aqui</p>
+        <button onclick="modal2l.close()">Fechar</button>
+    </dialog>
+
+
+    <button onclick="modal3l.showModal()">Edição de livros</button>
+    <dialog id="modal3l">
+        <p>Edite seu livro</p>
+        <button onclick="modal3l.close()">Fechar</button>
+    </dialog>
+
+
+    <button onclick="modal4l.showModal()">Exclusão de livros</button>
+    <dialog id="modal4l">
+        <p>Exclua seu livro</p>
+        <button onclick="modal4l.close()">Fechar</button>
+    </dialog>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="modal1e.showModal()">Registro de estudantes</button>
+    <dialog id="modal1e">
+        <input type="text" placeholder="Nome do estudante">
+        <input type="text" placeholder="Matrícula">
+        <input type="text" placeholder="dd/mm/aa">
+       <button>Registrar</button>
+        <button onclick="modal1e.close()">Fechar</button>
+    </dialog>
+    
+    <button onclick="modal2e.showModal()">Consulta de estudantes</button>
+    <dialog id="modal2e">
+        <input type="text" placeholder="Procure o estudante aqui">
+        <p>Estudantes aqui</p>
+        <button onclick="modal2e.close()">Fechar</button>
+    </dialog>
+
+
+    <button onclick="modal3e.showModal()">Edição de estudantes</button>
+    <dialog id="modal3e">
+        <p>Edite o estudante</p>
+        <button onclick="modal3e.close()">Fechar</button>
+    </dialog>
+
+
+    <button onclick="modal4e.showModal()">Exclusão de estudantes</button>
+    <dialog id="modal4e">
+        <p>Exclua o estudante aqui</p>
+        <button onclick="modal4e.close()">Fechar</button>
+    </dialog>
+
+</body>
+</html>
